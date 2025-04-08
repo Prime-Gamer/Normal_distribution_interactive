@@ -69,7 +69,7 @@ with st.container():
             help="Adjust the standard deviation (σ) of the distribution"
         )
         
-        st.markdown(f"**Current parameters:** μ = {mu:.2f}, σ = {sigma:.2f}")
+        st.markdown(f"""##### Current parameters: $\mu$ = {mu:.2f}, $\sigma$ = {sigma:.2f}""")
     
     with col2:
         # Generate plot
