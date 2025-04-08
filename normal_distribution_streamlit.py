@@ -154,7 +154,8 @@ with st.container():
     - **σ (standard deviation)**: The spread/width of the curve
         
     Key properties:
-    - Symmetric about the mean
+    - Symmetric about the mean.
+    - Bell Shaped curve.
     - Follows the empirical rule (68-95-99.7 rule):
         - **±1σ (red area)**: ~68.2% of data falls within 1 standard deviation of the mean
         - **±2σ (green area)**: ~95.4% of data falls within 2 standard deviations
