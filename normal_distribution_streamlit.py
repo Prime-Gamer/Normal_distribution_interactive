@@ -88,8 +88,8 @@ with st.container():
         ))
         
         # Add shaded regions with proper transparency
-        for n, color, alpha in zip([1, 2, 3], ['rgba(255,0,0,0.4)', 'rgba(0,128,0,0.3)', 'rgba(0,0,255,0.3)'], [0.3, 0.2, 0.1]):
-            x_range = np.linspace(mu - n*sigma, mu + n*sigma, 200)
+        for n, color in zip([3, 2, 1], ['rgba(0,0,255,0.3)', 'rgba(0,128,0,0.4)', 'rgba(255,0,0,0.5)']):
+            x_range = np.linspace(mu + n*sigma, mu - n*sigma, 200)
             y_range = normal_pdf(x_range, mu, sigma)
             fig.add_trace(go.Scatter(
                 x=np.concatenate([x_range, x_range[::-1]]),
