@@ -148,18 +148,32 @@ with st.container():
 # Information section
 with st.container():
     st.markdown("### About the Normal Distribution")
-    st.markdown('''
-    The normal (or Gaussian) distribution is a continuous probability distribution characterized by:
-    - **μ (mean)**: The center/location of the peak
-    - **σ (standard deviation)**: The spread/width of the curve
-        
-    Key properties:
-    - Symmetric about the mean.
-    - Bell Shaped curve.
-    - Follows the empirical rule (68-95-99.7 rule):
-        - **±1σ (red area)**: ~68.2% of data falls within 1 standard deviation of the mean
-        - **±2σ (green area)**: ~95.4% of data falls within 2 standard deviations
-        - **±3σ (blue area)**: ~99.7% of data falls within 3 standard deviations
-        
-    This distribution appears frequently in nature and statistics due to the Central Limit Theorem.
-    ''')
+    st.markdown(r'''
+The normal (or Gaussian) distribution is a continuous probability distribution characterized by:
+
+- **μ (mean)**: The center/location of the peak
+- **σ (standard deviation)**: The spread/width of the curve
+
+The probability density function (PDF) of a normal distribution with mean μ and standard deviation σ is:
+
+$$
+f(x | \mu, \sigma^2) = \frac{1}{\sqrt{2\pi\sigma^2}} \cdot e^{-\frac{(x-\mu)^2}{2\sigma^2}}
+$$
+
+*Where*:
+- $x$ is the variable
+- $\mu$ is the mean
+- $\sigma$ is the standard deviation
+- $\sigma^2$ is the variance
+- $e$ is Euler's number (~2.71828)
+
+*Key properties*:
+- Symmetric about the mean.
+- Bell Shaped curve.
+- Follows the empirical rule (68 - 95 - 99.7 rule):
+    - **±1σ (red area)**: ~68.2% of data falls within 1 standard deviation of the mean
+    - **±2σ (green area)**: ~95.4% of data falls within 2 standard deviations
+    - **±3σ (blue area)**: ~99.7% of data falls within 3 standard deviations
+    
+This distribution appears frequently in nature and statistics due to the Central Limit Theorem.
+''')
